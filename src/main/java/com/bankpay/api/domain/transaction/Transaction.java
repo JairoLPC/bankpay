@@ -2,10 +2,7 @@ package com.bankpay.api.domain.transaction;
 
 import com.bankpay.api.domain.user.User;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -16,6 +13,8 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @EqualsAndHashCode(of="id")
+@NoArgsConstructor
+
 
 public class Transaction {
     @Id
